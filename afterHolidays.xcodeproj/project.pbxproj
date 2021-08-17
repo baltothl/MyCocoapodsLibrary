@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		A29B103E26CB91CB007A93F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29B103C26CB91CB007A93F2 /* Main.storyboard */; };
 		A29B104026CB91CC007A93F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29B103F26CB91CC007A93F2 /* Assets.xcassets */; };
 		A29B104326CB91CC007A93F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29B104126CB91CC007A93F2 /* LaunchScreen.storyboard */; };
+		C6C0B441B70FB483E767A911 /* Pods_afterHolidays.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529BBC8EFB95B92AC3559325 /* Pods_afterHolidays.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		529BBC8EFB95B92AC3559325 /* Pods_afterHolidays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_afterHolidays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EF5168ED2C94F9963B5D152 /* Pods-afterHolidays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-afterHolidays.release.xcconfig"; path = "Target Support Files/Pods-afterHolidays/Pods-afterHolidays.release.xcconfig"; sourceTree = "<group>"; };
 		A29B103326CB91CB007A93F2 /* afterHolidays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = afterHolidays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29B103626CB91CB007A93F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A29B103826CB91CB007A93F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A29B103F26CB91CC007A93F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A29B104226CB91CC007A93F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A29B104426CB91CC007A93F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC09B2AA2BDC01511D5476EB /* Pods-afterHolidays.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-afterHolidays.debug.xcconfig"; path = "Target Support Files/Pods-afterHolidays/Pods-afterHolidays.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C0B441B70FB483E767A911 /* Pods_afterHolidays.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B18382C23901DE97CB085B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				529BBC8EFB95B92AC3559325 /* Pods_afterHolidays.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B7787BA11DA44F05A264761 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC09B2AA2BDC01511D5476EB /* Pods-afterHolidays.debug.xcconfig */,
+				8EF5168ED2C94F9963B5D152 /* Pods-afterHolidays.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A29B102A26CB91CB007A93F2 = {
 			isa = PBXGroup;
 			children = (
 				A29B103526CB91CB007A93F2 /* afterHolidays */,
 				A29B103426CB91CB007A93F2 /* Products */,
+				3B7787BA11DA44F05A264761 /* Pods */,
+				0B18382C23901DE97CB085B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A29B104726CB91CC007A93F2 /* Build configuration list for PBXNativeTarget "afterHolidays" */;
 			buildPhases = (
+				87B82A63616D3C331E312E24 /* [CP] Check Pods Manifest.lock */,
 				A29B102F26CB91CB007A93F2 /* Sources */,
 				A29B103026CB91CB007A93F2 /* Frameworks */,
 				A29B103126CB91CB007A93F2 /* Resources */,
+				CFC45F1E83C427E492D53183 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87B82A63616D3C331E312E24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-afterHolidays-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFC45F1E83C427E492D53183 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-afterHolidays/Pods-afterHolidays-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-afterHolidays/Pods-afterHolidays-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-afterHolidays/Pods-afterHolidays-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A29B102F26CB91CB007A93F2 /* Sources */ = {
@@ -283,6 +351,7 @@
 		};
 		A29B104826CB91CC007A93F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC09B2AA2BDC01511D5476EB /* Pods-afterHolidays.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +370,7 @@
 		};
 		A29B104926CB91CC007A93F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EF5168ED2C94F9963B5D152 /* Pods-afterHolidays.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

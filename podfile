@@ -1,0 +1,7 @@
+use_frameworks!
+
+target 'afterHolidays' do
+
+    pod "SwiftSpinner"
+
+end
